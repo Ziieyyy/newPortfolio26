@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Auto Finance Calculator Case Study & System Overview — Malaysian Bank Car Loan Comparison Platform by Khairul Azizi Anuwar." />
+  <title>Auto Finance Calculator — System Overview &amp; Pictures | Khairul Azizi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Base Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/glass.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- Project Detail Styles -->
+  <link rel="stylesheet" href="css/project-detail.css" />
+</head>
+
+<body class="project-detail-body">
+
+  <!-- Atmospheric Background -->
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-bg__photo"></div>
+    <div class="site-bg__overlay"></div>
+    <div class="site-bg__grain"></div>
+  </div>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="detail-nav">
+    <div class="detail-nav__inner">
+      <a href="index.html#projects" class="detail-nav__back" id="nav-back-projects">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        <span>Back to Projects</span>
+      </a>
+
+      <div class="detail-nav__title">
+        <span>🚗 Auto Finance Calculator</span>
+        <span class="detail-pill-badge category" style="padding: 3px 8px; font-size: 0.65rem;">Active</span>
+      </div>
+
+      <div class="detail-nav__actions">
+        <a href="https://autofinancecalculator.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-nav-cta"
+          id="btn-live-prototype">
+          <span>🔗 Live Prototype</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="detail-container">
+
+    <!-- Hero Header -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="index.html#projects">Web &amp; UI/UX Projects</a>
+        <span>/</span>
+        <span>Auto Finance Calculator</span>
+      </div>
+
+      <div class="detail-badges-row">
+        <span class="detail-pill-badge category" style="background:rgba(232,130,58,0.18); border:1px solid rgba(232,130,58,0.4); color:#FFA559;">
+          🚗 Financial Web Application
+        </span>
+        <span class="detail-pill-badge" style="background:rgba(59,130,246,0.18); border:1px solid rgba(59,130,246,0.4); color:#60A5FA;">
+          Multi-Bank Comparison
+        </span>
+        <span class="detail-pill-badge category">React &bull; TypeScript &bull; Vite</span>
+      </div>
+
+      <h1 class="detail-title">🚗 Auto Finance Calculator</h1>
+      <p class="detail-tagline">
+        A fast and transparent vehicle loan comparison web application designed for Malaysian car buyers to benchmark interest rates across top commercial banks, compute monthly installments, and visualize interest amortization schedules effortlessly.
+      </p>
+
+      <!-- Metadata Grid -->
+      <div class="detail-meta-grid">
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">My Role</div>
+          <div class="detail-meta-val">Frontend Developer</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Financial Target</div>
+          <div class="detail-meta-val">Malaysian Auto Financing (Hire Purchase)</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Tech Stack</div>
+          <div class="detail-meta-val">React, TypeScript, Vite, Tailwind, Supabase</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Live Deployment</div>
+          <div class="detail-meta-val">autofinancecalculator.vercel.app</div>
+        </div>
+      </div>
+
+      <!-- Hero Featured Showcase -->
+      <div class="detail-hero-showcase" id="hero-img-showcase" title="Click to enlarge hero showcase">
+        <img src="assets/autofinance/autofinance.png" alt="Auto Finance Calculator Main System Interface" />
+        <div class="detail-hero-caption">
+          <div class="detail-hero-caption-text">
+            🌟 Auto Finance Real-Time Bank Comparison &bull; Maybank, CIMB, Public Bank, Hong Leong &amp; RHB
+          </div>
+          <span style="font-size: 0.8rem; color: var(--accent); font-weight:600;">🔍 Click to expand picture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Solution Deep Dive -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          System Challenge &amp; Solution
+        </span>
+        <h2 class="detail-section-title">Demystifying Car Loan Financing in Malaysia</h2>
+      </div>
+
+      <div class="detail-two-col">
+        <div class="detail-card-callout problem">
+          <div class="detail-callout-head">
+            <span class="icon-problem">⚠️</span>
+            <span>The Challenge</span>
+          </div>
+          <p class="detail-callout-body">
+            Purchasing a vehicle in Malaysia involves complex Hire Purchase (HP) calculations with varying fixed interest rates across financial institutions. Consumers often encounter hidden compounding costs, confusing loan terms, and lack a single unified tool to directly compare bank offers before signing dealership agreements.
+          </p>
+        </div>
+
+        <div class="detail-card-callout solution">
+          <div class="detail-callout-head">
+            <span class="icon-solution">✅</span>
+            <span>The Calculator Solution</span>
+          </div>
+          <p class="detail-callout-body">
+            Created a dynamic web calculator that takes vehicle price, down payment percentage, and tenure years to immediately project side-by-side monthly commitments, total interest accrued, and total repayment sums across major Malaysian commercial banks with 100% clarity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key System Capabilities -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">✦ Capabilities</span>
+        <h2 class="detail-section-title">Core System Architecture &amp; Features</h2>
+        <p class="detail-section-desc">Fast, responsive mathematical simulation built with zero-latency client state reactivity.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🏦</div>
+          <h3 class="detail-feature-title">Multi-Bank Rate Comparison</h3>
+          <p class="detail-feature-desc">Side-by-side benchmarking table comparing real-time interest rates across Maybank, CIMB, Public Bank, Hong Leong, and RHB Bank.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🎚️</div>
+          <h3 class="detail-feature-title">Dynamic Interactive Sliders</h3>
+          <p class="detail-feature-desc">Smooth sliders and precision inputs for car price, deposit percentage (e.g. 10%, 20%), and tenure duration (1 to 9 years).</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">📈</div>
+          <h3 class="detail-feature-title">Interest Amortization Curve</h3>
+          <p class="detail-feature-desc">Visual graphs illustrating principal debt balance against cumulative bank interest paid over the lifecycle of the loan.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">⚡</div>
+          <h3 class="detail-feature-title">Instant Calculation Engine</h3>
+          <p class="detail-feature-desc">Optimized client-side TypeScript formula executing accurate flat-rate hire-purchase interest formulas instantaneously.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">📱</div>
+          <h3 class="detail-feature-title">Dealership Showroom Ready</h3>
+          <p class="detail-feature-desc">Mobile-first fluid layout allowing prospective buyers to quickly calculate monthly budgets while visiting car showrooms.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">📋</div>
+          <h3 class="detail-feature-title">Summary Quotation Copy</h3>
+          <p class="detail-feature-desc">One-tap copy button enabling users to save or share payment breakdown summaries directly to WhatsApp or personal notes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Pictures Gallery (Full Picture Showcase) -->
+    <section class="detail-section" id="system-gallery">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">📸 Visual Archive</span>
+        <h2 class="detail-section-title">Pictures of the System</h2>
+        <p class="detail-section-desc">Visual walkthrough of the Auto Finance Calculator interface and comparison modules. Click any picture to enlarge in full-resolution lightbox.</p>
+      </div>
+
+      <div class="detail-gallery-grid">
+
+        <!-- Screen 1: Bank Comparison Grid -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/autofinance/autofinance.png" alt="Auto Finance Calculator Multi-Bank Rates" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 01 &bull; Rate Comparison Grid</span>
+            <h3 class="gallery-screen-title">Malaysian Bank Comparison Console</h3>
+            <p class="gallery-screen-desc">
+              Multi-column calculation table presenting monthly installments, total interest, and total payable sums for Maybank, CIMB, Public Bank, Hong Leong, and RHB based on entered car price.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 2: Interactive Mockup -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/project-interactive.jpg" alt="Auto Finance UI Design Mockup" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 02 &bull; Interactive UI</span>
+            <h3 class="gallery-screen-title">Financial Tool Interface &bull; Responsive Layout</h3>
+            <p class="gallery-screen-desc">
+              Sleek financial design token system showcasing numeric inputs, slider handles, and high-visibility monthly repayment highlight cards.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">🛠️ Engineering</span>
+        <h2 class="detail-section-title">Technology Stack</h2>
+      </div>
+
+      <div class="detail-tech-pills">
+        <span class="detail-tech-pill primary">React</span>
+        <span class="detail-tech-pill primary">TypeScript</span>
+        <span class="detail-tech-pill primary">Vite</span>
+        <span class="detail-tech-pill">Tailwind CSS</span>
+        <span class="detail-tech-pill">Supabase</span>
+        <span class="detail-tech-pill">PostgreSQL</span>
+        <span class="detail-tech-pill">Vercel Fast Edge</span>
+      </div>
+    </section>
+
+    <!-- Project Footer Navigation -->
+    <nav class="detail-footer-nav" aria-label="Project Navigation">
+      <a href="project-easyassets.html" class="btn-project-nav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        <span>Previous: 💼 myEasyAssets</span>
+      </a>
+
+      <div style="display:flex; gap:12px;">
+        <a href="project-burunghantu.html" class="btn-project-nav" style="background: rgba(232,130,58,0.18); border-color: rgba(232,130,58,0.4); color:#fff;">
+          <span>Next: 🦉 Burung Hantu Western</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Interactive Lightbox Script -->
+  <script src="js/project-detail.js"></script>
+</body>
+
+</html>

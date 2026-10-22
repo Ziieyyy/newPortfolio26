@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="BreedLink Case Study & System Overview — Award-Winning Pet Matchmaking Mobile App by Khairul Azizi Anuwar." />
+  <title>BreedLink — System Overview &amp; Pictures | Khairul Azizi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Base Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/glass.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- Project Detail Styles -->
+  <link rel="stylesheet" href="css/project-detail.css" />
+</head>
+
+<body class="project-detail-body">
+
+  <!-- Atmospheric Background -->
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-bg__photo"></div>
+    <div class="site-bg__overlay"></div>
+    <div class="site-bg__grain"></div>
+  </div>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="detail-nav">
+    <div class="detail-nav__inner">
+      <a href="index.html#projects" class="detail-nav__back" id="nav-back-projects">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        <span>Back to Projects</span>
+      </a>
+
+      <div class="detail-nav__title">
+        <span>🐱 BreedLink</span>
+        <span class="detail-pill-badge pinned" style="padding: 3px 8px; font-size: 0.65rem;">📌 Pinned</span>
+      </div>
+
+      <div class="detail-nav__actions">
+        <a href="https://breedlinks.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-nav-cta"
+          id="btn-live-prototype">
+          <span>🔗 Live Prototype</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="detail-container">
+
+    <!-- Hero Header -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="index.html#projects">Web &amp; UI/UX Projects</a>
+        <span>/</span>
+        <span>BreedLink</span>
+      </div>
+
+      <div class="detail-badges-row">
+        <span class="detail-pill-badge pinned">📌 Pinned Flagship Project</span>
+        <span class="detail-pill-badge" style="background:rgba(234,179,8,0.18); border:1px solid rgba(234,179,8,0.4); color:#FDE047;">
+          🏆 1st Place (Best Project) @ ICE JTMK 2025
+        </span>
+        <span class="detail-pill-badge category">📱 Mobile Apps &amp; UI/UX</span>
+      </div>
+
+      <h1 class="detail-title">🐱 BreedLink Mobile Application</h1>
+      <p class="detail-tagline">
+        An award-winning ethical cat matchmaking platform engineered with React Native and Supabase, empowering feline owners to discover compatible breeding partners, consult verified breeders, and ensure ethical pedigree lineage.
+      </p>
+
+      <!-- Metadata Grid -->
+      <div class="detail-meta-grid">
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">My Role</div>
+          <div class="detail-meta-val">UI/UX Designer &amp; Mobile Developer</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Status &amp; Recognition</div>
+          <div class="detail-meta-val">1st Place Winner • ICE JTMK 2025</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Tech Stack</div>
+          <div class="detail-meta-val">React Native, Supabase, PostgreSQL</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Target Platform</div>
+          <div class="detail-meta-val">iOS &amp; Android Cross-Platform</div>
+        </div>
+      </div>
+
+      <!-- Hero Featured Showcase -->
+      <div class="detail-hero-showcase" id="hero-img-showcase" title="Click to enlarge hero showcase">
+        <img src="assets/project-breedlink.jpg" alt="BreedLink Mobile App Interface Showcase" />
+        <div class="detail-hero-caption">
+          <div class="detail-hero-caption-text">
+            🌟 BreedLink Main App Mockup &bull; Swipe Feed, Profile Cards &amp; Vet Certification Flow
+          </div>
+          <span style="font-size: 0.8rem; color: var(--accent); font-weight:600;">🔍 Click to expand picture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Solution Deep Dive -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          System Challenge &amp; Solution
+        </span>
+        <h2 class="detail-section-title">Bridging Ethical Breeding with Modern UI</h2>
+      </div>
+
+      <div class="detail-two-col">
+        <div class="detail-card-callout problem">
+          <div class="detail-callout-head">
+            <span class="icon-problem">⚠️</span>
+            <span>The Challenge</span>
+          </div>
+          <p class="detail-callout-body">
+            In Malaysia and Southeast Asia, cat enthusiasts and responsible pet guardians heavily rely on unmoderated social media groups to find breeding partners. This leads to inbreeding risks, lack of verified vaccination/health records, scam transactions, and unethical breeding mills without medical certifications.
+          </p>
+        </div>
+
+        <div class="detail-card-callout solution">
+          <div class="detail-callout-head">
+            <span class="icon-solution">✅</span>
+            <span>The BreedLink Solution</span>
+          </div>
+          <p class="detail-callout-body">
+            BreedLink delivers a secure, swipe-based mobile matchmaking ecosystem featuring verified vet health certificates, pedigree lineage tracking, geolocation discovery for nearby certified breeders, encrypted in-app messaging, and mutual approval agreements to safeguard feline welfare.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key System Capabilities -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">✦ Capabilities</span>
+        <h2 class="detail-section-title">Core System Architecture &amp; Features</h2>
+        <p class="detail-section-desc">Designed with user-centric ergonomics and cloud-native backend synchronization.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🐾</div>
+          <h3 class="detail-feature-title">Intuitive Swipe Matchmaking</h3>
+          <p class="detail-feature-desc">Interactive swipe-card algorithm filtering compatible cats based on breed genetics, temperament, age, and proximity.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🛡️</div>
+          <h3 class="detail-feature-title">Verified Health Badges</h3>
+          <p class="detail-feature-desc">Digital vet records upload, vaccination checks, and certification badges to eliminate unethical puppy/kitten mill practices.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">💬</div>
+          <h3 class="detail-feature-title">Real-Time In-App Chat</h3>
+          <p class="detail-feature-desc">Instant websocket chat powered by Supabase Realtime, enabling guardians to discuss diet, temperament, and terms securely.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">📍</div>
+          <h3 class="detail-feature-title">Geo-Radius Breeder Map</h3>
+          <p class="detail-feature-desc">GPS radius search connecting cat owners to accredited breeders and certified veterinary clinics within their state.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🤝</div>
+          <h3 class="detail-feature-title">Mutual Approval Protocol</h3>
+          <p class="detail-feature-desc">Two-factor breeding agreement protocol requiring both owners to confirm terms before contact details and meetup coordinates unlock.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🎨</div>
+          <h3 class="detail-feature-title">Warm Human-Pet UI System</h3>
+          <p class="detail-feature-desc">Figma-crafted design token system featuring warm peach tones, micro-animations, and fluid rounded card transitions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Pictures Gallery (Full Picture Showcase) -->
+    <section class="detail-section" id="system-gallery">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">📸 Visual Archive</span>
+        <h2 class="detail-section-title">Pictures of the System</h2>
+        <p class="detail-section-desc">Comprehensive visual walk-through of the BreedLink mobile application interfaces. Click any picture to enlarge in full-resolution lightbox.</p>
+      </div>
+
+      <div class="detail-gallery-grid">
+
+        <!-- Screen 1: Discover Feed -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/DiscoverPage.jpg" alt="BreedLink Swipe to Discover Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 01 &bull; Discovery Engine</span>
+            <h3 class="gallery-screen-title">Swipe-Based Matchmaking Feed</h3>
+            <p class="gallery-screen-desc">
+              Presents potential breeding candidates with rich pet profile photo, breed label, distance tag, and quick-action heart &amp; pass buttons for smooth one-thumb interaction.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 2: Detailed Cat Profile -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/catprofile.jpg" alt="BreedLink Detailed Cat Profile Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 02 &bull; Pet Specification</span>
+            <h3 class="gallery-screen-title">Cat Profile &amp; Pedigree Passport</h3>
+            <p class="gallery-screen-desc">
+              Detailed screen presenting breed lineage, age, vaccination certification status, personality badges, and verified veterinary badge verification.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 3: Instant Match Dialog -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/newMatch (1).jpg" alt="BreedLink Match Alert Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 03 &bull; Matchmaking Event</span>
+            <h3 class="gallery-screen-title">Mutual Match Celebration &amp; Actions</h3>
+            <p class="gallery-screen-desc">
+              Displays when both pet guardians like each other's feline profile, providing immediate triggers to start real-time chat or continue browsing nearby cats.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 4: Real-time In-App Chat -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/breedlinkchat.png" alt="BreedLink In-App Messaging Interface" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 04 &bull; Direct Communication</span>
+            <h3 class="gallery-screen-title">Encrypted Breeder Messaging</h3>
+            <p class="gallery-screen-desc">
+              Real-time messaging view allowing owners to exchange medical records, coordinate vet clinic meetup locations, and discuss mating prerequisites comfortably.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 5: Confirm & Approves -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/ConfirmApproves.jpg" alt="BreedLink Confirmation Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 05 &bull; Verification Protocol</span>
+            <h3 class="gallery-screen-title">Breeding Request Approval Protocol</h3>
+            <p class="gallery-screen-desc">
+              Formal request verification flow where both parties sign off on terms, health documents, and safety checklists before final approval is recorded.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 6: System Flow Architecture -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/breedlinksolution.png" alt="BreedLink Solution Flowchart" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 06 &bull; Architecture Diagram</span>
+            <h3 class="gallery-screen-title">End-to-End Solution Workflow</h3>
+            <p class="gallery-screen-desc">
+              Conceptual blueprint tracing the user journey from signup and verification to swipe matchmaking, approval contracts, and postpartum record logging.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 7: Sign In & Authentication -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/signinpage.jpg" alt="BreedLink Authentication Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 07 &bull; Security &amp; Access</span>
+            <h3 class="gallery-screen-title">User Authentication &amp; Guard</h3>
+            <p class="gallery-screen-desc">
+              Supabase Auth powered signup/login gate with two-factor support, password recovery, and email verification protecting member privacy.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 8: Onboarding Welcome Screen -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/breedlink/Intropage (1).jpg" alt="BreedLink Welcome Screen" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 08 &bull; Onboarding</span>
+            <h3 class="gallery-screen-title">First-Time User Walkthrough</h3>
+            <p class="gallery-screen-desc">
+              Step-by-step introduction highlighting pet safety best practices, verified breeder responsibilities, and guide to responsible feline ownership.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">🛠️ Engineering</span>
+        <h2 class="detail-section-title">Technology Stack</h2>
+      </div>
+
+      <div class="detail-tech-pills">
+        <span class="detail-tech-pill primary">React Native</span>
+        <span class="detail-tech-pill primary">Supabase Backend</span>
+        <span class="detail-tech-pill primary">PostgreSQL</span>
+        <span class="detail-tech-pill">Realtime WebSockets</span>
+        <span class="detail-tech-pill">Figma Prototyping</span>
+        <span class="detail-tech-pill">Adobe Illustrator</span>
+        <span class="detail-tech-pill">HTML5 &amp; CSS3</span>
+        <span class="detail-tech-pill">Vercel Deployment</span>
+      </div>
+    </section>
+
+    <!-- Project Footer Navigation -->
+    <nav class="detail-footer-nav" aria-label="Project Navigation">
+      <a href="index.html#projects" class="btn-project-nav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        <span>Back to All Projects</span>
+      </a>
+
+      <div style="display:flex; gap:12px;">
+        <a href="project-riderhood.html" class="btn-project-nav" style="background: rgba(232,130,58,0.18); border-color: rgba(232,130,58,0.4); color:#fff;">
+          <span>Next: 🏍️ Riderhood</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Interactive Lightbox Script -->
+  <script src="js/project-detail.js"></script>
+</body>
+
+</html>

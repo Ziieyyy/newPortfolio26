@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Riderhood Case Study & System Overview — Connected Motorcycle Care & Workshop Booking Platform by Khairul Azizi Anuwar." />
+  <title>Riderhood — System Overview &amp; Pictures | Khairul Azizi</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Base Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/glass.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <!-- Project Detail Styles -->
+  <link rel="stylesheet" href="css/project-detail.css" />
+</head>
+
+<body class="project-detail-body">
+
+  <!-- Atmospheric Background -->
+  <div class="site-bg" aria-hidden="true">
+    <div class="site-bg__photo"></div>
+    <div class="site-bg__overlay"></div>
+    <div class="site-bg__grain"></div>
+  </div>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="detail-nav">
+    <div class="detail-nav__inner">
+      <a href="index.html#projects" class="detail-nav__back" id="nav-back-projects">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        <span>Back to Projects</span>
+      </a>
+
+      <div class="detail-nav__title">
+        <span>🏍️ Riderhood</span>
+        <span class="detail-pill-badge pinned" style="padding: 3px 8px; font-size: 0.65rem;">📌 Pinned</span>
+      </div>
+
+      <div class="detail-nav__actions">
+        <a href="https://www.riderhood.my/" target="_blank" rel="noopener noreferrer" class="btn-nav-cta"
+          id="btn-live-website" style="background: rgba(34,197,94,0.22); border-color: rgba(34,197,94,0.5); color:#4ade80;">
+          <span>🌐 Live Website (riderhood.my) ↗</span>
+        </a>
+        <a href="#poster-showcase" class="btn-nav-cta" id="btn-poster-jump" style="background: rgba(249,115,22,0.18); border-color: rgba(249,115,22,0.45); color:#FB923C;">
+          <span>🖼️ Presentation Poster</span>
+        </a>
+        <a href="#system-gallery" class="btn-nav-cta" id="btn-gallery-jump">
+          <span>📸 Visual Archive</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="detail-container">
+
+    <!-- Hero Header -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="index.html#projects">Web &amp; UI/UX Projects</a>
+        <span>/</span>
+        <span>Riderhood</span>
+      </div>
+
+      <div class="detail-badges-row">
+        <span class="detail-pill-badge pinned">📌 Pinned Flagship Project</span>
+        <span class="detail-pill-badge" style="background:rgba(249,115,22,0.18); border:1px solid rgba(249,115,22,0.45); color:#FB923C;">
+          ⚡ Premium Moto Care Ecosystem
+        </span>
+        <span class="detail-pill-badge category">🌐 Full-Stack Web &amp; Mobile</span>
+      </div>
+
+      <h1 class="detail-title">🏍️ Riderhood Moto Care Platform</h1>
+      <p class="detail-tagline">
+        Your Motorcycle. Your Maintenance. Your Workshop. A unified digital ecosystem connecting riders with certified workshops across Kulim and the Penang border, featuring GPS workshop directory maps, 5-step rapid service booking, and automated digital service logs.
+      </p>
+
+      <div style="margin: 20px 0 28px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+        <a href="https://www.riderhood.my/" target="_blank" rel="noopener noreferrer" class="btn-nav-cta"
+          style="background: linear-gradient(135deg, #16a34a, #15803d); color: #fff; font-size: 0.95rem; font-weight: 600; padding: 11px 22px; border-radius: 9999px; box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4); text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+          <span>🌐 Visit Live Website: riderhood.my ↗</span>
+        </a>
+        <a href="#poster-showcase" class="btn-nav-cta" style="font-size: 0.9rem; padding: 10px 18px;">
+          <span>🖼️ Presentation Poster</span>
+        </a>
+      </div>
+
+      <!-- Metadata Grid -->
+      <div class="detail-meta-grid">
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">My Role</div>
+          <div class="detail-meta-val">Full-Stack Developer &amp; UI/UX Designer</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Coverage Network</div>
+          <div class="detail-meta-val">Kulim, Kedah &amp; Penang Border Network</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">Tech Stack</div>
+          <div class="detail-meta-val">React, TypeScript, Tailwind CSS, Supabase</div>
+        </div>
+        <div class="detail-meta-card">
+          <div class="detail-meta-label">System Type</div>
+          <div class="detail-meta-val">Web Platform &amp; Mobile Responsive</div>
+        </div>
+      </div>
+
+      <!-- Hero Featured Showcase -->
+      <div class="detail-hero-showcase" id="hero-img-showcase" title="Click to enlarge hero showcase">
+        <img src="assets/riderhood/landingpageriderhood.png" alt="Riderhood Platform Hero Overview" />
+        <div class="detail-hero-caption">
+          <div class="detail-hero-caption-text">
+            🌟 Riderhood Core Landing &bull; Motorcycle Maintenance, Booking &amp; Workshop Ecosystem
+          </div>
+          <span style="font-size: 0.8rem; color: var(--accent); font-weight:600;">🔍 Click to expand picture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Solution Deep Dive -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          System Challenge &amp; Solution
+        </span>
+        <h2 class="detail-section-title">Modernizing Motorcycle Service Logistics</h2>
+      </div>
+
+      <div class="detail-two-col">
+        <div class="detail-card-callout problem">
+          <div class="detail-callout-head">
+            <span class="icon-problem">⚠️</span>
+            <span>The Challenge</span>
+          </div>
+          <p class="detail-callout-body">
+            Motorcycle riders frequently face uncertainty finding reputable workshops for specialized care (such as superbike dyno tuning, major service, or genuine parts replacement). Physical queues lead to wasted hours, paper service booklets are easily misplaced, and workshop mechanics struggle with unpredictable customer walk-ins.
+          </p>
+        </div>
+
+        <div class="detail-card-callout solution">
+          <div class="detail-callout-head">
+            <span class="icon-solution">✅</span>
+            <span>The Riderhood Solution</span>
+          </div>
+          <p class="detail-callout-body">
+            Riderhood integrates an interactive GPS directory map featuring certified partner workshops (including flagship partner Wan Legacy Motor), a 5-step rapid booking scheduler with real-time bay availability, digital maintenance history receipts, and a garage inventory management hub.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key System Capabilities -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">✦ Capabilities</span>
+        <h2 class="detail-section-title">Core System Architecture &amp; Features</h2>
+        <p class="detail-section-desc">Designed with high contrast dark automotive styling, instant geolocation queries, and seamless appointment workflows.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🗺️</div>
+          <h3 class="detail-feature-title">Kulim GPS Workshop Map</h3>
+          <p class="detail-feature-desc">Interactive live radar mapping 11+ certified workshops across Kulim, Lunas, Hi-Tech, and Penang border with live status and rating filters.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">⏱️</div>
+          <h3 class="detail-feature-title">Book In Seconds (5-Step Flow)</h3>
+          <p class="detail-feature-desc">Streamlined step-by-step booking flow: Select Bike &rarr; Select Workshop &rarr; Choose Package &rarr; Pick Date &rarr; Confirm Slot.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">📑</div>
+          <h3 class="detail-feature-title">Digital Maintenance Ledger</h3>
+          <p class="detail-feature-desc">Comprehensive record ledger tracking service dates, odometer milestones, replaced components, costs, and official workshop confirmation.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🏍️</div>
+          <h3 class="detail-feature-title">Virtual Garage</h3>
+          <p class="detail-feature-desc">Store multiple motorcycles (e.g. Yamaha MT-09 SP, Y15ZR) with license plate numbers, mileage logs, and upcoming service countdowns.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">⚙️</div>
+          <h3 class="detail-feature-title">Spare Parts &amp; Package Directory</h3>
+          <p class="detail-feature-desc">Transparent pricing catalogs for chain &amp; sprocket kits, brake pads, battery replacements, and synthetic lubricant fluid services.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="detail-feature-icon">🤝</div>
+          <h3 class="detail-feature-title">Partner Workshop Network</h3>
+          <p class="detail-feature-desc">Dedicated dashboard integration for partner shops like Wan Legacy Motor, allowing mechanics to manage queue bays and approve bookings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Official Innovation & Presentation Poster Section -->
+    <section class="detail-section" id="poster-showcase">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">🖼️ Official Presentation Poster</span>
+        <h2 class="detail-section-title">Innovation &amp; Research Presentation Poster</h2>
+        <p class="detail-section-desc">
+          Official competition and institutional presentation poster for Riderhood ("Ride Smart, Service Easy!") at Politeknik Malaysia / PTSB. Click the poster to zoom into high resolution.
+        </p>
+      </div>
+
+      <div class="detail-poster-showcase-box">
+        <!-- Poster Graphic Preview -->
+        <div class="poster-preview-card" title="Click to view full-resolution poster">
+          <img src="assets/riderhood/riderhood-present-poster.jpg" alt="Riderhood Official Presentation Poster - Ride Smart, Service Easy!" loading="lazy" />
+          <div class="gallery-zoom-hint" style="opacity: 1; transform: none; top: 12px; right: 12px;">🔍 Expand Full Poster</div>
+        </div>
+
+        <!-- Structured Poster Insights & Breakdown -->
+        <div class="poster-info-pane">
+          <div class="poster-info-head">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span class="detail-pill-badge pinned" style="padding: 4px 10px; font-size: 0.7rem;">🇲🇾 Politeknik Malaysia Project</span>
+              <span class="detail-pill-badge" style="background:rgba(56,189,248,0.15); border:1px solid rgba(56,189,248,0.35); color:#38BDF8; font-size:0.7rem;">
+                🏍️ Final Year Innovation
+              </span>
+            </div>
+            <h3 class="poster-info-title">RIDERHOOD: Ride Smart, Service Easy!</h3>
+            <p class="poster-info-motto">"One App, Every Ride. Complete Peace of Mind."</p>
+          </div>
+
+          <!-- Problem & Objective Summary from Poster -->
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+            Riderhood is an all-in-one motorcycle maintenance and assistance application engineered to keep riders and their bikes in top condition, anytime, anywhere. It directly tackles forgotten maintenance schedules, lack of digital service history, and difficulty finding reliable local workshops.
+          </p>
+
+          <!-- 6-Step Development Methodology -->
+          <div class="poster-methodology-bar">
+            <div class="poster-methodology-title">⚡ 6-Step Engineering Methodology</div>
+            <div class="poster-methodology-steps">
+              <span class="poster-step-pill">1. Problem Identification</span>
+              <span class="poster-step-arrow">&rarr;</span>
+              <span class="poster-step-pill">2. Requirements Gathering</span>
+              <span class="poster-step-arrow">&rarr;</span>
+              <span class="poster-step-pill">3. UI/UX Design</span>
+              <span class="poster-step-arrow">&rarr;</span>
+              <span class="poster-step-pill">4. Prototype Dev</span>
+              <span class="poster-step-arrow">&rarr;</span>
+              <span class="poster-step-pill">5. System Testing</span>
+              <span class="poster-step-arrow">&rarr;</span>
+              <span class="poster-step-pill">6. Evaluation</span>
+            </div>
+          </div>
+
+          <!-- 5 Innovation Pillars Highlighted in Poster -->
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 8px;">
+              ✦ 5 Core Innovation Modules
+            </div>
+            <div class="poster-innovation-grid">
+              <div class="poster-innovation-card">
+                <div class="poster-innovation-name">📑 Maintenance Log</div>
+                <div class="poster-innovation-desc">Record servicing, component replacements, costs, and verified workshop logs.</div>
+              </div>
+              <div class="poster-innovation-card">
+                <div class="poster-innovation-name">⏰ Smart Reminders</div>
+                <div class="poster-innovation-desc">Automated alerts based on mileage thresholds and calendar intervals.</div>
+              </div>
+              <div class="poster-innovation-card">
+                <div class="poster-innovation-name">⛽ Fuel &amp; Expense</div>
+                <div class="poster-innovation-desc">Log fuel consumption and overall motorcycle running expenditure.</div>
+              </div>
+              <div class="poster-innovation-card">
+                <div class="poster-innovation-name">🩺 Health Score</div>
+                <div class="poster-innovation-desc">Algorithmic motorcycle health meter providing real-time condition grading.</div>
+              </div>
+              <div class="poster-innovation-card" style="grid-column: span 2;">
+                <div class="poster-innovation-name">🗺️ Nearby Workshop Finder</div>
+                <div class="poster-innovation-desc">Discover nearby certified mechanics based on location and specific repair needs.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Presentation Booth & Client Showcase -->
+    <section class="detail-section" id="exhibition-showcase">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">👥 Exhibition &amp; Demonstration</span>
+        <h2 class="detail-section-title">Client Presentation &amp; Live Demo Booth</h2>
+        <p class="detail-section-desc">
+          Live project demonstration and stakeholder evaluation booth at Politeknik Malaysia exhibition hall, showcasing the system running in real time across mobile and web interfaces.
+        </p>
+      </div>
+
+      <div class="detail-client-showcase-box">
+        <div class="client-photo-card" title="Click to view live exhibition showcase">
+          <img src="assets/riderhood/riderhood-client-showcase.jpg" alt="Riderhood Team Exhibition Booth and Client Presentation" loading="lazy" />
+          <div class="gallery-zoom-hint" style="opacity: 1; transform: none; top: 12px; right: 12px;">🔍 Expand Photo</div>
+        </div>
+
+        <div class="client-details-pane">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span class="detail-pill-badge" style="background:rgba(16,185,129,0.18); border:1px solid rgba(16,185,129,0.4); color:#34D399;">
+              ✅ Live System Demonstration
+            </span>
+          </div>
+
+          <h3 class="client-details-title">Stakeholder Presentation &amp; Real-Time Evaluation</h3>
+
+          <p class="client-details-desc">
+            The Riderhood team showcased the fully functional platform on dual devices (laptop workshop administrator portal and mobile rider application). Visitors, industry mentors, and academic supervisors tested live GPS workshop locator queries, service booking flows, and digital maintenance logging in real time.
+          </p>
+
+          <div>
+            <span style="font-size:0.8rem; font-weight:700; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.05em;">
+              Team Members &amp; Collaborators
+            </span>
+            <div class="team-members-chips">
+              <span class="team-chip lead">⭐ Khairul Azizi (Full-Stack &amp; UI/UX)</span>
+              <span class="team-chip">Tanussha A/P Jegen</span>
+              <span class="team-chip">Nur Ain Iffdika Binti Jeffri</span>
+              <span class="team-chip">Muhammad Danial Amsyar</span>
+              <span class="team-chip">Mohamad Hafiy Musyrif</span>
+            </div>
+          </div>
+
+          <div style="padding: 12px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); font-size: 0.8125rem; color: var(--text-tertiary);">
+            🎓 <strong style="color:#fff;">Supervisor Guidance:</strong> Sincere appreciation expressed to academic supervisors and mentor panels for invaluable technical guidance and evaluation throughout system development.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Pictures Gallery (Full Picture Showcase) -->
+    <section class="detail-section" id="system-gallery">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">📸 Visual Archive</span>
+        <h2 class="detail-section-title">Pictures of the System</h2>
+        <p class="detail-section-desc">Comprehensive visual walk-through of the Riderhood platform screens, presentation poster, and live exhibition. Click any picture to enlarge in full-resolution lightbox.</p>
+      </div>
+
+      <div class="detail-gallery-grid">
+
+        <!-- Screen 1: Kulim Workshop Directory Map -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/landingpagemaps.png" alt="Kulim Workshop Directory Map" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 01 &bull; Directory &amp; Map</span>
+            <h3 class="gallery-screen-title">Kulim Workshop Directory Map</h3>
+            <p class="gallery-screen-desc">
+              Interactive map visualizing certified motorcycle workshops across Kulim, Kedah, highlighting partner shop Wan Legacy Motor with ratings, distances, and open slots.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 2: Rapid Service Booking -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/bookinsecond.png" alt="5-Step Service Booking Flow" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 02 &bull; Booking Engine</span>
+            <h3 class="gallery-screen-title">Book In Seconds &bull; Multi-Step Flow</h3>
+            <p class="gallery-screen-desc">
+              Progressive disclosure stepper allowing riders to select their saved motorcycle, preferred partner workshop, service package, and reservation time slot.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 3: Interactive Workshop Dashboard -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/Screenshot 2026-09-24 223816.png" alt="Motorcycle Workshops Directory & Map UI" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 03 &bull; GPS Navigation View</span>
+            <h3 class="gallery-screen-title">Live Workshop Locator &amp; Status Cards</h3>
+            <p class="gallery-screen-desc">
+              Full application dashboard combining dual-pane map exploration with real-time workshop cards, showing operating hours, GPS distance, and instant phone call triggers.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 4: Appointment & Maintenance History -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/Screenshot 2026-09-24 223846.png" alt="Service History & Appointment Ledger" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 04 &bull; Service Ledger</span>
+            <h3 class="gallery-screen-title">History &amp; Maintenance Timeline</h3>
+            <p class="gallery-screen-desc">
+              Complete historical record of motorcycle repairs, chain replacements, and major engine services with breakdown of costs, date stamps, and verified status badges.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 5: Workshop Service Packages -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/Screenshot 2026-09-24 223748.png" alt="Workshop Service Packages & Pricing" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 05 &bull; Package Management</span>
+            <h3 class="gallery-screen-title">Service Packages &amp; Pricing Catalog</h3>
+            <p class="gallery-screen-desc">
+              Detailed service tiers from express oil changes to full dyno inspection, providing transparent labor costs and turnaround time estimates.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 6: Spare Parts & Bookings -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/Screenshot 2026-09-24 223832.png" alt="Spare Parts Directory & Booking State" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 06 &bull; Spare Parts</span>
+            <h3 class="gallery-screen-title">Parts Catalog &amp; Active Bookings</h3>
+            <p class="gallery-screen-desc">
+              Inventory view detailing compatibility with motorcycle models (Yamaha, Honda, Kawasaki) and booking status filters (Pending Approval, Confirmed, Completed).
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 7: Rider Profile & Garage -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/Screenshot 2026-09-24 223919.png" alt="Rider Profile & My Garage" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 07 &bull; Profile Hub</span>
+            <h3 class="gallery-screen-title">Rider Account &amp; My Garage View</h3>
+            <p class="gallery-screen-desc">
+              Centralized profile settings allowing riders to manage saved vehicles, language preferences, dark mode toggles, and notification alerts.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 8: Moto Care Brand Landing -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/landingpageriderhood.png" alt="Riderhood Brand Hero" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 08 &bull; Platform Identity</span>
+            <h3 class="gallery-screen-title">Premium Dark Brand System</h3>
+            <p class="gallery-screen-desc">
+              Sleek high-contrast orange and obsidian interface designed for outdoor readability and motorsport aesthetics.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 9: Official Innovation & Presentation Poster -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/riderhood-present-poster.jpg" alt="Riderhood Official Innovation & Presentation Poster" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 09 &bull; Official Presentation Poster</span>
+            <h3 class="gallery-screen-title">Politeknik Innovation &amp; Research Poster</h3>
+            <p class="gallery-screen-desc">
+              Official presentation poster outlining project problem statements, 6-step development methodology, and 5 core innovation pillars.
+            </p>
+          </div>
+        </article>
+
+        <!-- Screen 10: Client Presentation & Exhibition Booth -->
+        <article class="gallery-item">
+          <div class="gallery-img-wrap">
+            <img src="assets/riderhood/riderhood-client-showcase.jpg" alt="Live Exhibition Booth & Client Presentation" class="gallery-img" loading="lazy" />
+            <div class="gallery-zoom-hint">🔍 Expand Screen</div>
+          </div>
+          <div class="gallery-caption-body">
+            <span class="gallery-screen-tag">Screen 10 &bull; Live Exhibition</span>
+            <h3 class="gallery-screen-title">Live Exhibition Booth &amp; Client Demo</h3>
+            <p class="gallery-screen-desc">
+              On-site demonstration booth showcasing the working prototype to industry evaluators, supervisors, and clients.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="detail-section">
+      <div class="detail-section-header">
+        <span class="detail-section-eyebrow">🛠️ Engineering</span>
+        <h2 class="detail-section-title">Technology Stack</h2>
+      </div>
+
+      <div class="detail-tech-pills">
+        <span class="detail-tech-pill primary">React / Next.js</span>
+        <span class="detail-tech-pill primary">TypeScript</span>
+        <span class="detail-tech-pill primary">Tailwind CSS</span>
+        <span class="detail-tech-pill">Supabase DB</span>
+        <span class="detail-tech-pill">Mapbox / Leaflet GPS</span>
+        <span class="detail-tech-pill">Node.js API</span>
+        <span class="detail-tech-pill">UI/UX Prototyping</span>
+        <span class="detail-tech-pill">Responsive Design</span>
+      </div>
+    </section>
+
+    <!-- Project Footer Navigation -->
+    <nav class="detail-footer-nav" aria-label="Project Navigation">
+      <a href="project-breedlink.html" class="btn-project-nav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        <span>Previous: 🐱 BreedLink</span>
+      </a>
+
+      <div style="display:flex; gap:12px; flex-wrap: wrap;">
+        <a href="https://www.riderhood.my/" target="_blank" rel="noopener noreferrer" class="btn-project-nav" style="background: rgba(34,197,94,0.18); border-color: rgba(34,197,94,0.45); color:#4ade80;">
+          <span>🌐 Open riderhood.my ↗</span>
+        </a>
+        <a href="project-animate.html" class="btn-project-nav" style="background: rgba(56,189,248,0.18); border-color: rgba(56,189,248,0.4); color:#fff;">
+          <span>Next: 🎬 Animate Project</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <!-- Interactive Lightbox Script -->
+  <script src="js/project-detail.js"></script>
+</body>
+
+</html>
